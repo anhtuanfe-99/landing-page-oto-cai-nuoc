@@ -5,6 +5,13 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+	images: {
+		formats: ["image/webp", "image/avif"],
+		minimumCacheTTL: 31536000, // 1 year
+	},
+	compress: true,
+	poweredByHeader: false,
+};
 
 export default config;
