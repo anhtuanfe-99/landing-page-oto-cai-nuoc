@@ -10,6 +10,7 @@ import {
   Car,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   const features = [
@@ -36,7 +37,10 @@ export default function HomePage() {
       <header className="bg-white shadow-lg sticky top-0 z-50">
         <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="relative h-24 w-24 rounded-lg overflow-hidden">
+            <Link
+              href="#"
+              className="relative h-24 w-24 rounded-lg overflow-hidden"
+            >
               <Image
                 priority
                 src="/logo.png"
@@ -47,7 +51,7 @@ export default function HomePage() {
                 placeholder="blur"
                 blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f3f4f6'/%3E%3Cpath d='M40 160 L90 130 L140 140 L190 135 L240 145 L290 130 L360 150 L360 260 L40 260 Z' fill='%23374151'/%3E%3Crect x='70' y='190' width='70' height='45' rx='8' fill='%23111827'/%3E%3Crect x='260' y='190' width='70' height='45' rx='8' fill='%23111827'/%3E%3Ctext x='200' y='170' text-anchor='middle' fill='%23374151' font-family='Arial' font-size='16' font-weight='bold'%3EToyota Fortuner%3C/text%3E%3C/svg%3E"
               />
-            </div>
+            </Link>
 
             {/* Contact Info */}
             <a
