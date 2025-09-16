@@ -2,11 +2,9 @@ import "~/styles/globals.css";
 
 import type { Metadata } from "next";
 
-const baseUrl =
-  process.env.NEXT_PUBLIC_BASE_URL &&
-  process.env.NEXT_PUBLIC_BASE_URL.startsWith("http")
-    ? process.env.NEXT_PUBLIC_BASE_URL
-    : "https://example.com";
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+  ? process.env.NEXT_PUBLIC_BASE_URL
+  : "https://example.com";
 
 console.log("baseUrl: ", baseUrl);
 
