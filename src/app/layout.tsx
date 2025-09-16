@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Xe Dịch Vụ Cái Nước. Tài xế chuyên nghiệp, an toàn, giá hợp lý. Gọi ngay: 0918.669.356",
     images: [
       {
-        url: "/vf-5-banner.png", // Use WebP for better performance
+        url: "/vf-5-banner.png",
         width: 1200,
         height: 630,
         alt: "Xe dịch vụ Cái Nước",
@@ -72,7 +72,6 @@ export const metadata: Metadata = {
       type: "image/png",
       sizes: "32x32",
       url: "/favicon-32x32.png",
-      // TODO
     },
     {
       rel: "icon",
@@ -88,14 +87,6 @@ export const metadata: Metadata = {
     statusBarStyle: "default",
     capable: true,
   },
-
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
-
   // Local SEO and service-specific keywords
   keywords: [
     // Primary service keywords
@@ -147,12 +138,6 @@ export const metadata: Metadata = {
   // Performance optimization
   metadataBase: new URL(baseUrl),
 
-  // Verification (add these when you set up Google Search Console)
-  verification: {
-    // google: "your-google-verification-code",
-    // bing: "your-bing-verification-code",
-  },
-
   // Language and region
   alternates: {
     canonical: baseUrl,
@@ -162,7 +147,6 @@ export const metadata: Metadata = {
   },
 };
 import { Inter } from "next/font/google";
-import { log } from "console";
 
 const inter = Inter({ subsets: ["latin"] });
 
