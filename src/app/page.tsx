@@ -69,10 +69,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section
-        id="home"
-        className="bg-gradient-to-br from-blue-50 to-indigo-100 py-16 lg:py-24"
-      >
+      <section id="home" className="bg-[#ededf6] py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="mb-6 font-bold text-4xl text-gray-900 lg:text-6xl">
@@ -110,7 +107,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             {/* 7 Seat Car - Toyota Fortuner 2017 */}
             <div className="overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:shadow-xl">
-              <div className="aspect-h-10 aspect-w-16 bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+              <div className="aspect-h-10 aspect-w-16 bg-[#ededf6] p-8">
                 <div className="relative h-64 w-full overflow-hidden rounded-lg">
                   <Image
                     src="/toyota-fortuner.webp"
@@ -164,7 +161,7 @@ export default function HomePage() {
 
             {/* 5 Seat Car - VinFast VF5 */}
             <div className="overflow-hidden rounded-2xl bg-white shadow-lg transition duration-300 hover:shadow-xl">
-              <div className="aspect-h-10 aspect-w-16 bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
+              <div className="aspect-h-10 aspect-w-16 bg-[#ededf6] p-8">
                 <div className="relative h-64 w-full overflow-hidden rounded-lg">
                   <Image
                     src="/vf-5-banner.webp"
