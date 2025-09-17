@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "Xe Dịch Vụ Cái Nước",
     images: [
       {
-        url: baseUrl.replace(/\/$/, "") + "/vf-5-banner.png",
+        url: baseUrl.replace(/\/$/, "") + "/toyota-fortuner.webp",
         width: 1200,
         height: 630,
         alt: "Xe dịch vụ Cái Nước",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
       "Xe Dịch Vụ Cái Nước. Tài xế chuyên nghiệp, an toàn, giá hợp lý. Gọi ngay: 0918.669.356",
     images: [
       {
-        url: baseUrl.replace(/\/$/, "") + "/vf-5-banner.png",
+        url: baseUrl.replace(/\/$/, "") + "/toyota-fortuner.webp",
         width: 1200,
         height: 630,
       },
