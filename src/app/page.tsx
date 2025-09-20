@@ -148,7 +148,7 @@ export default function HomePage() {
                 <div className="bg-[#ededf6] p-6">
                   <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                     <Image
-                      src="/vf-5-banner.webp"
+                      src="/vinfast-vf5.webp"
                       alt="VinFast VF5 - Xe 5 chỗ hiện đại"
                       className="object-cover"
                       fill
@@ -255,7 +255,7 @@ export default function HomePage() {
                 <div className="bg-[#ededf6] p-6">
                   <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                     <Image
-                      src="/hyundai-solati.webp"
+                      src="/"
                       alt="Hyundai Solati - Xe 16 chỗ cao cấp"
                       className="object-cover"
                       fill
