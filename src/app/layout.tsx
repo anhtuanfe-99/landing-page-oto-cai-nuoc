@@ -7,7 +7,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL!;
 console.log("baseUrl: ", baseUrl);
 
 export const metadata: Metadata = {
-  title: "Xe Dịch Vụ Cái Nước - Đặt Xe 5-7 Chỗ Uy Tín | 0918.669.356",
+  title: "Xe Dịch Vụ Cái Nước - Đặt Xe 5-7-16 Chỗ Uy Tín | 0918.669.356",
   description:
     "Xe Dịch Vụ Cái Nước uy tín. Tài xế chuyên nghiệp, giá cả hợp lý, phục vụ 24/7. Đặt xe ngay: 0918.669.356",
 
@@ -91,6 +91,7 @@ export const metadata: Metadata = {
     // Vehicle-specific keywords
     "xe 5 chỗ Cái Nước",
     "xe 7 chỗ Cái Nước",
+    "xe 16 chỗ Cái Nước",
 
     // Local area keywords
     "xe dịch vụ Cà Mau",
