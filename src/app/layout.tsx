@@ -26,9 +26,9 @@ export const metadata: Metadata = {
 
   // Local SEO optimization
   openGraph: {
-    title: "Xe Dịch Vụ Cái Nước - Đặt Xe 5-7 Chỗ Uy Tín",
+    title: "Xe Dịch Vụ Cái Nước - Đặt Xe 5-7-16 Chỗ Uy Tín | 0918.669.356",
     description:
-      "Xe Dịch Vụ Cái Nước chuyên nghiệp . Tài xế kinh nghiệm, an toàn tuyệt đối, giá cả hợp lý. Phục vụ tận nơi 24/7 tại Cái Nước và các tỉnh lân cận.",
+      "Xe Dịch Vụ Cái Nước uy tín. Tài xế chuyên nghiệp, giá cả hợp lý, phục vụ 24/7. Đặt xe ngay: 0918.669.356",
     url: baseUrl,
     type: "website",
     locale: "vi_VN",
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Xe Dịch Vụ Cái Nước - Đặt Xe 5-7 Chỗ",
+    title: "Xe Dịch Vụ Cái Nước - Đặt Xe 5-7-16 Chỗ Uy Tín | 0918.669.356",
     description:
-      "Xe Dịch Vụ Cái Nước. Tài xế chuyên nghiệp, an toàn, giá hợp lý. Gọi ngay: 0918.669.356",
+      "Xe Dịch Vụ Cái Nước uy tín. Tài xế chuyên nghiệp, giá cả hợp lý, phục vụ 24/7. Đặt xe ngay: 0918.669.356",
     images: [
       {
         url: baseUrl.replace(/\/$/, "") + "/toyota-fortuner.webp",
