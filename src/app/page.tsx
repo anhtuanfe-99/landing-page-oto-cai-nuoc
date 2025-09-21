@@ -255,7 +255,7 @@ export default function HomePage() {
                 <div className="bg-[#ededf6] p-6">
                   <div className="relative aspect-[16/10] w-full overflow-hidden rounded-lg">
                     <Image
-                      src="/"
+                      src="/hyundai-solati.webp"
                       alt="Hyundai Solati - Xe 16 chỗ cao cấp"
                       className="object-cover"
                       fill
