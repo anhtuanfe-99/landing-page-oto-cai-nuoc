@@ -8,6 +8,7 @@ import {
   Shield,
   Users,
 } from "lucide-react";
+import { headers } from "next/headers";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -47,7 +48,15 @@ const criticalStyles = `
   }
 `;
 
-export default function HomePage() {
+export default async function HomePage() {
+  const headersList = headers();
+  const userAgent = (await headersList).get("user-agent") || "";
+
+  const isMobile =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      userAgent
+    );
+
   const features = [
     {
       icon: <Shield className="h-8 w-8 text-green-600" />,
@@ -153,10 +162,11 @@ export default function HomePage() {
                       className="object-cover"
                       fill
                       priority
-                      sizes="(max-width: 640px) 100vw, 332px"
                       // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23f3f4f6'/%3E%3C/svg%3E"
+                      quality={isMobile ? 90 : 100}
+                      sizes={isMobile ? "100vw" : "332px"}
                     />
                   </div>
                 </div>
@@ -212,7 +222,8 @@ export default function HomePage() {
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23f3f4f6'/%3E%3C/svg%3E"
                       priority={false} // Chỉ priority nếu above-the-fold
-                      sizes="(max-width: 640px) 100vw, 332px"
+                      quality={isMobile ? 90 : 100}
+                      sizes={isMobile ? "100vw" : "332px"} // sizes="(max-width: 640px) 100vw, 332px"
                       // quality={75}  // Giảm quality một chút cho mobile
                     />
                   </div>
@@ -264,11 +275,13 @@ export default function HomePage() {
                       className="object-cover"
                       fill
                       // sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      quality={isMobile ? 90 : 100}
+                      sizes={isMobile ? "100vw" : "332px"}
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23f3f4f6'/%3E%3C/svg%3E"
                       priority={false} // Chỉ priority nếu above-the-fold
-                      sizes="(max-width: 640px) 100vw, 332px"
+                      // sizes="(max-width: 640px) 100vw, 332px"
                     />
                   </div>
                 </div>
