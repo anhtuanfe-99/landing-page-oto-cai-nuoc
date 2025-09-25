@@ -152,7 +152,7 @@ export default function HomePage() {
                       alt="VinFast VF5 - Xe 5 chỗ hiện đại"
                       className="object-cover"
                       fill
-                      fetchPriority="high"
+                      priority
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23f3f4f6'/%3E%3C/svg%3E"
