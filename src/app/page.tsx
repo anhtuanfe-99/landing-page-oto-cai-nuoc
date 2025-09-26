@@ -221,7 +221,7 @@ export default async function HomePage() {
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23f3f4f6'/%3E%3C/svg%3E"
-                      priority={false} // Chỉ priority nếu above-the-fold
+                      priority={!isMobile} // Chỉ priority nếu above-the-fold
                       quality={isMobile ? 75 : 100}
                       sizes="(max-width: 640px) 400px, (max-width: 1024px) 50vw, 332px"
                     />
@@ -276,7 +276,7 @@ export default async function HomePage() {
                       loading="lazy"
                       placeholder="blur"
                       blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23f3f4f6'/%3E%3C/svg%3E"
-                      priority={false} // Chỉ priority nếu above-the-fold
+                      priority={!isMobile} // Chỉ priority nếu above-the-fold
                       quality={isMobile ? 75 : 100}
                       sizes="(max-width: 640px) 400px, (max-width: 1024px) 50vw, 332px"
                     />
