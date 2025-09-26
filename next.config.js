@@ -10,6 +10,9 @@ const config = {
       formats: ["image/webp", "image/avif"],
       minimumCacheTTL: 31536000, // 1 year
     },
+    experimental: {
+      optimizeCss: true,
+    }
 };
 
 export default config;
